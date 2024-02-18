@@ -1,1 +1,0 @@
-import{jb as a,la as o,yb as i}from"./chunk-VJJ4CGLM.js";var m=(()=>{let e=class e{ngOnInit(){}};e.\u0275fac=function(n){return new(n||e)},e.\u0275cmp=o({type:e,selectors:[["app-home"]],standalone:!0,features:[a],decls:0,vars:0,template:function(n,s){},dependencies:[i],styles:["[_nghost-%COMP%]{display:block}"],changeDetection:0});let t=e;return t})();export{m as HomeComponent};

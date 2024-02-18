@@ -35,7 +35,7 @@ jobs:
         with:
           node-version: 18.17.0
       - run: npm install
-      - run: ng build
+      - run: node ./node_modules/@angular/cli/bin/ng build --configuration=production
       - run: cd ./docs/browser
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
