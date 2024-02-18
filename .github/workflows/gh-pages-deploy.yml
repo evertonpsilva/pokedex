@@ -35,9 +35,9 @@ jobs:
       - run: npm install
       - run: node ./node_modules/@angular/cli/bin/ng build --configuration=production
       - run: cd ./docs/browser
-      - uses: actions/upload-artifact@master
+      - uses: actions/upload-artifact@v4
         with:
-          name: page
+          name: github-pages
           path: ./docs/browser
 
   deploy:
@@ -59,7 +59,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@master
         with:
-          name: page
+          name: github-pages
           path: .
       - uses: actions/configure-pages@v1
       - uses: actions/upload-pages-artifact@v1
