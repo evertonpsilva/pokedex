@@ -33,7 +33,7 @@ jobs:
         with:
           node-version: 18.17.0
       - run: npm install
-      - run: node ./node_modules/@angular/cli/bin/ng build --configuration=production
+      - run: node ./node_modules/@angular/cli/bin/ng build --configuration=production --base-href=/pokedex/
       - uses: actions/upload-artifact@v4
         with:
           name: github-pages
