@@ -38,7 +38,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: page
-          path: build
+          path: ./
 
   deploy:
     # Add a dependency to the build job
