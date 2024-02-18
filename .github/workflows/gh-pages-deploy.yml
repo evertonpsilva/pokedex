@@ -64,10 +64,16 @@ jobs:
 
       - run: ls
       - uses: actions/configure-pages@v4
-      - uses: actions/upload-pages-artifact@v3
+
+      - uses: vimtor/action-zip@v1.1
         with:
-          name: github-pages-upload
-          path: ./
+          files: ./
+          dest: result.zip
+
+      # - uses: actions/upload-pages-artifact@v3
+      #   with:
+      #     name: github-pages-upload
+      #     path: ./
 
       - run: ls
       - id: deployment
